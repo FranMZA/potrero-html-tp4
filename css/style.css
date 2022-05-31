@@ -1,0 +1,432 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+header {
+    display: block;
+    height: fit-content;
+    margin: 0 auto 0 auto;
+    align-self: flex-start;
+    max-width: 2000px;
+}
+
+nav {
+    background-color: #999;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: block;
+    width: 98%;
+    box-sizing: border-box;
+}
+
+section.index {
+    width: 68%;
+}
+
+aside {
+    display: block;
+    box-sizing: border-box;
+}
+
+aside.index {
+    width: 28%;
+    order: 1;
+}
+
+footer {
+    display: block;
+    background-color: lightgrey;
+    padding: 1% 2% 2% 2%;
+    clear: both;
+    position: relative;
+    bottom: 0%;
+    right: 0%;
+    margin-bottom: -50vh;
+    margin-top: 2vh;
+}
+
+h1 {
+    display: block;
+    color: lightgreen;
+    background-color: darkslategray;
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 1% 0%;
+    width: 98%;
+    margin: 1% 1% 1% 1%;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 15px black;
+    transition: all 500ms;
+}
+
+h1:hover {
+    background-color: darkgreen;
+    text-decoration: underline;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px black;
+}
+
+h2 {
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    background-color: darkgreen;
+    font-weight: bold;
+    box-shadow: 10px 10px 15px black;
+    transition: all 500ms;
+}
+
+h2:hover {
+    border-radius: 10px;
+    font-style: italic;
+    text-decoration: underline;
+    box-shadow: 10px 10px 5px black;
+}
+
+h3 {
+    margin: 0%;
+    padding: 0%;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+iframe {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*  */
+/* Footer */
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 2000px;
+    margin: auto;
+}
+
+a.footer_item {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 2px;
+    transition: background-color 1s, border-radius 500ms;
+}
+
+a.footer_item:hover {
+    background-color: olivedrab;
+    border-radius: 10px;
+}
+
+
+/*  */
+/* NavBar */
+
+.nav_container {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    max-width: 2000px;
+}
+
+li.nav_item {
+    float: left;
+    color: white;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.nav_item:hover {
+    background-image: linear-gradient(darkgreen, green);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0% 1%;
+    padding: 0%;
+}
+
+nav img {
+    height: 100%;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*  */
+/* Tabla Ingredientes */
+
+.ingred ul {
+    color: white;
+}
+
+.ingred th {
+    color: rgb(220, 255, 150);
+}
+
+.ingred li {
+    font-style: italic;
+}
+
+table {
+    display: block;
+    background-color: olivedrab;
+    width: fit-content;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 10px 10px 20px black;
+    transition: all 1s;
+}
+
+table:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 15px 15px 25px black;
+}
+
+
+/*  */
+/* Formulario */
+
+form.form_contact label {
+    display: block;
+}
+
+form.form_contact input {
+    display: block;
+    width: 25%;
+    min-width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+form.form_contact textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+form.form_contact input[type=submit],
+input[type=button] {
+    width: max-content;
+    cursor: pointer;
+    border: none;
+    background-color: #999;
+    color: #f1f1f1;
+    transition: background-color 500ms;
+    transition: box-shadow 200ms;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px black;
+}
+
+form.form_contact input[type=submit]:hover,
+input[type=button]:hover {
+    background-color: olivedrab;
+}
+
+form.form_contact input[type=submit]:active,
+input[type=button]:active {
+    background-color: green;
+    box-shadow: 1px 1px 1px black;
+}
+
+
+/*  */
+/* Contenedores */
+.main_container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.aside_container {
+    margin: 0%;
+    padding: 0%;
+    box-shadow: 10px 10px 15px black;
+}
+
+.container {
+    background-color: #f1f1f1;
+    padding: 10px 30px;
+    box-shadow: 10px 10px 15px black;
+}
+
+.container_procedimiento {
+    border-left: 5px solid lightgreen;
+}
+
+.text {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: justify;
+    margin-top: -4%;
+    padding: 3%;
+    height: 700px;
+    background-color: #f1f1f1;
+    overflow: auto;
+}
+
+.sub {
+    text-align: center;
+    overflow: auto;
+}
+
+iframe {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.link_video {
+    display: block;
+    background-color: #f1f1f1;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1%;
+    transition: all 1s;
+    box-shadow: 10px 10px 15px black;
+}
+
+#link_video:hover {
+    font-style: italic;
+    background-color: olivedrab;
+    box-shadow: 10px 10px 5px black;
+}
+
+
+/*  */
+/* Imagen Goulash */
+
+div.image {
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: auto;
+    overflow: hidden;
+    background-color: lightcyan;
+    transition: all 2s;
+    backface-visibility: hidden;
+}
+
+div.image_text {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    transition: .5s ease;
+    margin: 0%;
+    opacity: 0;
+    text-align: center;
+    color: olivedrab;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-shadow: 2px 2px 10px #f1f1f1;
+    transition: 2s;
+    /* transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%) */
+}
+
+#gulashImg {
+    width: 100%;
+    transition: all 2s;
+}
+
+.image:hover #gulashImg {
+    transform: scale(1.2);
+    opacity: 0.3;
+}
+
+.image:hover .image_text {
+    /* background-color: grey; */
+    opacity: 1;
+}
+
+
+/*  */
+/* Logo Wpp Flotante */
+
+.wpp_float {
+    position: fixed;
+    right: 5vw;
+    bottom: 15vh;
+    z-index: 9999;
+}
+
+.logo_float {
+    height: 8vh;
+    width: 8vh;
+    transition: transform 1s;
+}
+
+.logo_float:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+/*  */
+/* Imagenes */
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
